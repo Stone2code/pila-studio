@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Vina+Sans&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/reveal.js" defer></script>
+  <script src="scripts/spin.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+  <title>Contact | Pila Studio</title>
+</head>
+<body>
+  <nav class="nav-container" aria-label="Main">
+    <div class="nav">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Pila Studio, home" width="53" height="44"></a>
+      <a href="work.html" class="nav-link">WORK</a>
+      <a href="services.html" class="nav-link">SERVICES</a>
+      <a href="about.html" class="nav-link">aBOUT</a>
+      <a href="contact.html" class="nav-link" aria-current="page">CONTaCT</a>
+    </div>
+  </nav>
+
+  <div class="banner-container banner-container-small">
+    <div class="banner banner-small">
+      <h1 class="banner-title">SaY HELLO</h1>
+      <p class="banner-tagline">Tell us everything. We answer within 48 hours.</p>
+      <img src="images/illu_3.png" alt="" class="banner-illu banner-illu-1 illu-spin" style="--r: 0deg">
+      <img src="images/illu_1.png" alt="" class="banner-illu banner-illu-2 illu-spin" style="--r: 15deg">
+      <img src="images/illu_6.png" alt="" class="banner-illu banner-illu-3 illu-spin" style="--r: 15deg">
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="form-card reveal">
+      <img src="images/illu_3.png" alt="" class="form-illu form-illu-left illu-spin illu-invert" style="--r: -10deg">
+      <img src="images/illu_2.png" alt="" class="form-illu form-illu-right illu-spin illu-invert" style="--r: 110deg">
+
+      <!-- PLACEHOLDER: replace YOUR_FORM_ID with your Formspree form id (https://formspree.io) -->
+      <form class="pila-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-field">
+          <label class="form-label" for="name">YOUR NaME</label>
+          <input class="form-input" type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="email">YOUR EMaIL</label>
+          <input class="form-input" type="email" id="email" name="email" autocomplete="email" placeholder="jane@brand.com" required>
+        </div>
+        <div class="form-field form-field-wide">
+          <label class="form-label" for="brand">BRaND OR PROJECT <span class="form-optional">(optional)</span></label>
+          <input class="form-input" type="text" id="brand" name="brand" placeholder="Name, website or Instagram">
+        </div>
+      <fieldset class="form-field form-field-wide">
+        <legend class="form-label">WHaT DO YOU NEED?</legend>
+        <div class="choices">
+          <label class="choice">
+            <input type="radio" name="project" value="Landing" required>
+            <span>LaNDING</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="project" value="Showcase">
+            <span>SHOWCaSE</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="project" value="Custom">
+            <span>CUSTOM</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="project" value="Not sure yet">
+            <span>NOT SURE YET</span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form-field form-field-wide">
+        <legend class="form-label">BUDGET</legend>
+        <div class="choices">
+          <label class="choice">
+            <input type="radio" name="budget" value="Around 1k">
+            <span>~ €1K</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="budget" value="2k to 5k">
+            <span>€2K – 5K</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="budget" value="6k and more">
+            <span>€6K +</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="budget" value="Let's talk">
+            <span>LET'S TaLK</span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form-field form-field-wide">
+        <legend class="form-label">WHEN?</legend>
+        <div class="choices">
+          <label class="choice">
+            <input type="radio" name="timing" value="ASAP">
+            <span>aSaP</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="timing" value="1 to 2 months">
+            <span>1 – 2 MONTHS</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="timing" value="No rush">
+            <span>NO RUSH</span>
+          </label>
+        </div>
+      </fieldset>
+        <div class="form-field form-field-wide">
+          <label class="form-label" for="message">TELL US EVERYTHING</label>
+          <textarea class="form-input form-textarea" id="message" name="message" rows="6" placeholder="Your project, your vibe, your favourite websites..." required></textarea>
+        </div>
+        <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-actions form-field-wide">
+          <button type="submit" class="pill-btn">SEND IT</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <div class="form-sent" hidden>
+        <img src="images/illu_5.png" alt="" class="illu-spin illu-invert">
+        <h2>MESSaGE SENT.</h2>
+        <p>Thanks! Pierre or Gala will get back to you within 48 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-container" id="socials">
+    <div class="section-head reveal">
+      <h2>OR FIND US HERE</h2>
+      <p>DMs are open. So is our inbox.</p>
+    </div>
+    <div class="socials reveal">
+      <a href="mailto:hello@pilastudio.com" class="pill-btn"><i class="fa-solid fa-envelope"></i> EMaIL</a>
+      <a href="#" class="pill-btn"><i class="fa-brands fa-instagram"></i> INSTaGRaM</a>
+      <a href="#" class="pill-btn"><i class="fa-brands fa-linkedin"></i> LINKEDIN</a>
+      <a href="#" class="pill-btn"><i class="fa-brands fa-github"></i> GITHUB</a>
+    </div>
+  </section>
+
+  <div class="divider-container" aria-hidden="true">
+    <div class="divider">
+      <span class="illu-scroll" data-speed="0.15"><img src="images/illu_4.png" alt="" class="illu-spin illu-invert"></span>
+      <span class="illu-scroll" data-speed="-0.2"><img src="images/illu_2.png" alt="" class="illu-spin illu-invert"></span>
+      <span class="illu-scroll" data-speed="0.15"><img src="images/illu_5.png" alt="" class="illu-spin illu-invert"></span>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+  </div>
+</body>
+</html>

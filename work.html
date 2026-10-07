@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Vina+Sans&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/reveal.js" defer></script>
+  <script src="scripts/filter.js" defer></script>
+  <title>Work | Pila Studio</title>
+</head>
+<body>
+  <nav class="nav-container" aria-label="Main">
+    <div class="nav">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Pila Studio, home" width="53" height="44"></a>
+      <a href="work.html" class="nav-link" aria-current="page">WORK</a>
+      <a href="services.html" class="nav-link">SERVICES</a>
+      <a href="about.html" class="nav-link">aBOUT</a>
+      <a href="contact.html" class="nav-link">CONTaCT</a>
+    </div>
+  </nav>
+
+  <div class="banner-container banner-container-small">
+    <div class="banner banner-small">
+      <h1 class="banner-title">THE WORK</h1>
+      <p class="banner-tagline">Websites first. Graphics too.</p>
+      <img src="images/illu_1.png" alt="" class="banner-illu banner-illu-1 illu-spin" style="--r: 15deg">
+      <img src="images/illu_6.png" alt="" class="banner-illu banner-illu-2 illu-spin" style="--r: 15deg">
+      <img src="images/illu_2.png" alt="" class="banner-illu banner-illu-3 illu-spin" style="--r: 110deg">
+    </div>
+  </div>
+
+  <section class="section-container" id="projects">
+    <div class="filter-container reveal" role="group" aria-label="Filter projects">
+      <button type="button" class="pill-btn pill-btn-small" data-filter="all" aria-pressed="true">aLL</button>
+      <button type="button" class="pill-btn pill-btn-small" data-filter="web" aria-pressed="false">WEB</button>
+      <button type="button" class="pill-btn pill-btn-small" data-filter="graphic" aria-pressed="false">GRaPHIC</button>
+    </div>
+    <div class="grid-container grid-work reveal">
+      <a href="#" class="card-pic work-item" data-category="web">
+        <img src="images/web_1.png" alt="Maison Ostra website">
+        <span class="work-label">MaISON OSTRa &middot; WEB</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="graphic">
+        <img src="images/2.png" alt="Gamba jungle jewelry poster">
+        <span class="work-label">GaMBa &middot; GRaPHIC</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="web">
+        <img src="images/web_2.png" alt="Studio Bloom website">
+        <span class="work-label">STUDIO BLOOM &middot; WEB</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="graphic">
+        <img src="images/1.png" alt="Crocodile and sun illustration">
+        <span class="work-label">CROCO SOLEIL &middot; GRaPHIC</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="web">
+        <img src="images/web_3.png" alt="Le Comptoir landing page">
+        <span class="work-label">LE COMPTOIR &middot; WEB</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="graphic">
+        <img src="images/3.png" alt="Hands with eyes and a red sun">
+        <span class="work-label">THE WaTCHERS &middot; GRaPHIC</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="web">
+        <img src="images/web_4.png" alt="Nova Records website">
+        <span class="work-label">NOVa RECORDS &middot; WEB</span>
+      </a>
+      <a href="#" class="card-pic work-item" data-category="graphic">
+        <img src="images/4.png" alt="Black flower and meditating figure">
+        <span class="work-label">BLOOM RITUaL &middot; GRaPHIC</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="cta-container">
+    <div class="cta reveal">
+      <img src="images/illu_4.png" alt="" class="cta-illu cta-illu-left illu-spin illu-invert" style="--r: -10deg">
+      <h2>GOT a PROJECT?</h2>
+      <p>Your site could be the next card in this grid.</p>
+      <a href="contact.html" class="pill-btn">LET'S TaLK</a>
+      <img src="images/illu_5.png" alt="" class="cta-illu cta-illu-right illu-spin illu-invert" style="--r: 15deg">
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+  </div>
+</body>
+</html>
