@@ -1,0 +1,166 @@
+#illu-6 {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  transform: rotate(15deg);
+}
+
+#illu-6:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 972px) {
+  #illu-6 {
+    right: 1%;
+    bottom: 8%;
+    width: 180px;
+  }
+}
+
+#illu-1 {
+  position: absolute;
+  top: 11%;
+  right: 15%;
+  transform: rotate(15deg);
+}
+
+#illu-1:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 972px) {
+  #illu-1 {
+    top: 7%;
+    right: 5%;
+    width: 180px;
+  }
+}
+
+#illu-3 {
+  position: absolute;
+  bottom: 9%;
+  left: 12%;
+}
+
+#illu-3:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+
+@media screen and (max-width: 972px) {
+  #illu-3 {
+    bottom: 7%;
+    left: 5%;
+    width: 180px;
+  }
+}
+
+#illu-4 {
+  position: absolute;
+  top: 2%;
+  left: 35%;
+  transform: rotate(170deg);
+}
+
+#illu-4:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 972px) {
+  #illu-4 {
+    left: 30%;
+    width: 180px;
+  }
+}
+
+#illu-5 {
+  position: absolute;
+  bottom: 2%;
+  right: 35%;
+  transform: rotate(0deg);
+}
+
+#illu-5:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 972px) {
+  #illu-5 {
+    right: 30%;
+    bottom: 1%;
+    width: 180px;
+  }
+}
+
+
+#illu-2 {
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  transform: rotate(110deg);
+}
+
+#illu-2:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 972px) {
+  #illu-2 {
+    top: 12%;
+    left: 5%;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  #illu-1, #illu-2, #illu-3, #illu-4, #illu-5, #illu-6 {
+    width: 110px;
+  }
+}
+
+.illu-spin {
+  transform: rotate(var(--r, 0deg));
+  transition: transform 1s ease;
+}
+
+.illu-spin:hover {
+  transform: rotate(calc(var(--r, 0deg) + 360deg));
+}
+
+.illu-invert {
+  filter: invert(1);
+}
+
+.illu-scroll {
+  display: inline-flex;
+  will-change: transform;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+@media screen and (max-width: 718px) {
+  .divider {
+    gap: 30px;
+  }
+}
+
+.divider img {
+  width: 120px;
+}
+
+@media screen and (max-width: 718px) {
+  .divider img {
+    width: 80px;
+  }
+}

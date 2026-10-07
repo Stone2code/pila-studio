@@ -1,0 +1,107 @@
+.portrait-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+}
+
+@media screen and (max-width: 972px) {
+  .portrait-row {
+    flex-direction: column;
+  }
+}
+
+.portrait {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36%;
+  padding: 40px 40px 50px;
+  border: 10px solid white;
+  border-radius: 125px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1120px) {
+  .portrait {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .portrait {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .portrait {
+    width: 85%;
+    padding: 24px 24px 40px;
+    border-radius: 100px;
+  }
+}
+
+.portrait-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 718px) {
+  .portrait-photo {
+    border-radius: 80px;
+  }
+}
+
+.portrait h3 {
+  margin: 20px 0 0;
+  font-size: 90px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.portrait p {
+  margin: 10px 0 0;
+  font-size: 22px;
+  color: white;
+}
+
+.portrait .portrait-role {
+  margin: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.portrait-illu {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  width: 140px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 718px) {
+  .portrait-illu {
+    top: -40px;
+    right: -10px;
+    width: 100px;
+  }
+}
+
+.portrait-link {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1120px) {
+  .portrait-link {
+    width: 140px;
+  }
+}

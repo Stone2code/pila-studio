@@ -1,0 +1,120 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  border-radius: 200px;
+}
+
+@media screen and (max-width: 972px) {
+  .banner-container {
+    margin-top: 1%;
+  }
+}
+
+.banner h1 {
+  font-size: 100px;
+}
+
+@media screen and (max-width: 718px) {
+  .banner h1 {
+    font-size: 70px;
+  }
+}
+
+#logo {
+  max-width: 70%;
+  height: auto;
+}
+
+.banner-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  letter-spacing: 1px;
+  text-align: center;
+  color: black;
+}
+
+.banner-tagline {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 26px;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 718px) {
+  .banner-tagline {
+    font-size: 20px;
+  }
+}
+
+.banner-small {
+  flex-direction: column;
+  padding: 0 15%;
+  box-sizing: border-box;
+}
+
+.banner-illu {
+  position: absolute;
+  width: 170px;
+}
+
+@media screen and (max-width: 972px) {
+  .banner-illu {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .banner-illu {
+    width: 80px;
+  }
+}
+
+.banner-illu-1 {
+  top: 12%;
+  left: 9%;
+}
+
+@media screen and (max-width: 718px) {
+  .banner-illu-1 {
+    top: 8%;
+    left: 14%;
+  }
+}
+
+.banner-illu-2 {
+  bottom: 10%;
+  right: 9%;
+}
+
+@media screen and (max-width: 718px) {
+  .banner-illu-2 {
+    bottom: 8%;
+    right: 14%;
+  }
+}
+
+.banner-illu-3 {
+  top: 8%;
+  right: 26%;
+  width: 110px;
+}
+
+@media screen and (max-width: 972px) {
+  .banner-illu-3 {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .banner-illu-3 {
+    display: none;
+  }
+}

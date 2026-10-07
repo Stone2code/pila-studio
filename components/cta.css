@@ -1,0 +1,101 @@
+.cta {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 90px 60px 70px;
+  border: 10px solid white;
+  border-radius: 200px;
+  text-align: center;
+}
+
+@media screen and (max-width: 972px) {
+  .cta {
+    width: 85%;
+    border-radius: 125px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .cta {
+    padding: 70px 24px 50px;
+    border-radius: 100px;
+  }
+}
+
+.cta h2 {
+  margin: 0;
+  font-size: 120px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+@media screen and (max-width: 1120px) {
+  .cta h2 {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .cta h2 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .cta h2 {
+    font-size: 58px;
+  }
+}
+
+.cta p {
+  width: 70%;
+  margin: 10px 0 40px;
+  font-size: 26px;
+  color: white;
+}
+
+@media screen and (max-width: 718px) {
+  .cta p {
+    width: 100%;
+    font-size: 21px;
+  }
+}
+
+.cta-illu {
+  position: absolute;
+  width: 150px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 718px) {
+  .cta-illu {
+    width: 90px;
+  }
+}
+
+.cta-illu-left {
+  top: -60px;
+  left: 10%;
+}
+
+@media screen and (max-width: 718px) {
+  .cta-illu-left {
+    top: -40px;
+  }
+}
+
+.cta-illu-right {
+  bottom: -60px;
+  right: 10%;
+}
+
+@media screen and (max-width: 718px) {
+  .cta-illu-right {
+    bottom: -40px;
+  }
+}

@@ -1,0 +1,97 @@
+.carrousel {
+  width: 100%;
+}
+
+.carrousel-track {
+  display: flex;
+  gap: 40px;
+  padding: 30px 5%;
+  margin: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 5%;
+  scrollbar-width: none;
+  list-style: none;
+}
+
+.carrousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 718px) {
+  .carrousel-track {
+    gap: 20px;
+  }
+}
+
+.carrousel-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 420px;
+  overflow: hidden;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 100px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+
+.carrousel-card:hover, .carrousel-card:focus-visible {
+  transform: rotate(-3deg);
+}
+
+@media screen and (max-width: 972px) {
+  .carrousel-card {
+    flex-basis: 340px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .carrousel-card {
+    flex-basis: 78%;
+    border-radius: 80px;
+  }
+}
+
+.carrousel-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.carrousel-caption {
+  padding: 18px 30px 34px;
+  background-color: black;
+  border-radius: 0 0 90px 90px;
+  text-align: center;
+}
+
+.carrousel-caption h3 {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.carrousel-caption p {
+  margin: 4px 0 0;
+  font-size: 20px;
+  color: white;
+}
+
+.carrousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.carrousel-controls .pill-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+  background-color: black;
+  color: white;
+}

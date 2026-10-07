@@ -1,0 +1,30 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 6px 20px;
+  border: 4px solid white;
+  border-radius: 200px;
+  font-family: 'Questrial';
+  font-size: 20px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 718px) {
+  .tag {
+    font-size: 17px;
+  }
+}

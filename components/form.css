@@ -1,0 +1,267 @@
+.form-card {
+  box-sizing: border-box;
+  position: relative;
+  width: 80%;
+  max-width: 1150px;
+  padding: 80px 90px 70px;
+  border: 10px solid white;
+  border-radius: 125px;
+}
+
+@media screen and (max-width: 1120px) {
+  .form-card {
+    width: 88%;
+    padding: 70px 60px 60px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .form-card {
+    width: 92%;
+    padding: 60px 22px 50px;
+    border-radius: 60px;
+  }
+}
+
+.form-illu {
+  position: absolute;
+  width: 150px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 718px) {
+  .form-illu {
+    width: 90px;
+  }
+}
+
+.form-illu-left {
+  top: -70px;
+  left: 8%;
+}
+
+@media screen and (max-width: 718px) {
+  .form-illu-left {
+    top: -45px;
+  }
+}
+
+.form-illu-right {
+  bottom: -70px;
+  right: 8%;
+}
+
+@media screen and (max-width: 718px) {
+  .form-illu-right {
+    bottom: -45px;
+  }
+}
+
+.pila-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+}
+
+@media screen and (max-width: 972px) {
+  .pila-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pila-form[hidden] {
+  display: none;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-field-wide {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  padding: 0;
+  font-family: 'Vina Sans';
+  font-size: 44px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+@media screen and (max-width: 718px) {
+  .form-label {
+    font-size: 36px;
+  }
+}
+
+.form-optional {
+  font-family: 'Questrial';
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 30px;
+  background-color: black;
+  border: 6px solid white;
+  border-radius: 200px;
+  font-family: 'Questrial';
+  font-size: 22px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: rgb(140, 140, 140);
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 718px) {
+  .form-input {
+    padding: 14px 22px;
+    font-size: 19px;
+  }
+}
+
+.form-textarea {
+  min-height: 200px;
+  border-radius: 60px;
+  resize: vertical;
+}
+
+@media screen and (max-width: 718px) {
+  .form-textarea {
+    border-radius: 40px;
+  }
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.choice {
+  position: relative;
+  cursor: pointer;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.choice span {
+  display: inline-block;
+  padding: 8px 30px;
+  border: 6px solid white;
+  border-radius: 200px;
+  font-family: 'Vina Sans';
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.choice:hover span {
+  transform: rotate(-3deg);
+}
+
+.choice input:checked + span {
+  background-color: white;
+  color: black;
+}
+
+.choice input:focus-visible + span {
+  outline: 4px dashed white;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 718px) {
+  .choice span {
+    padding: 6px 20px;
+    font-size: 26px;
+  }
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-actions .pill-btn:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.form-status {
+  min-height: 1em;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.form-status a {
+  color: white;
+}
+
+.form-sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.form-sent[hidden] {
+  display: none;
+}
+
+.form-sent img {
+  width: 150px;
+}
+
+.form-sent h2 {
+  margin: 20px 0 0;
+  font-size: 100px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+@media screen and (max-width: 718px) {
+  .form-sent h2 {
+    font-size: 60px;
+  }
+}
+
+.form-sent p {
+  margin: 10px 0 0;
+  font-size: 26px;
+  color: white;
+}

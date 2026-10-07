@@ -1,0 +1,45 @@
+.section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 100px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+@media screen and (max-width: 1120px) {
+  .section-head h2 {
+    font-size: 82px;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .section-head h2 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .section-head h2 {
+    font-size: 56px;
+  }
+}
+
+.section-head p {
+  margin: 10px 0 0;
+  font-size: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 1120px) {
+  .section-head p {
+    font-size: 22px;
+  }
+}
