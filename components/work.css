@@ -58,3 +58,48 @@
   background-color: white;
   color: black;
 }
+
+.card-pic-cta {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 60px;
+  font-family: 'Vina Sans';
+  font-size: 46px;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-pic-cta:hover, .card-pic-cta:focus-visible {
+  background-color: black;
+  color: white;
+  outline: 6px solid white;
+  outline-offset: -6px;
+  transform: rotate(-3deg);
+}
+
+.work-item .card-pic-cta {
+  width: 100%;
+}
+
+@media screen and (max-width: 972px) {
+  .card-pic-cta {
+    width: 85%;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .card-pic-cta {
+    font-size: 28px;
+    border-radius: 40px;
+  }
+}
